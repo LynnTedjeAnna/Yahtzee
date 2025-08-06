@@ -1,0 +1,91 @@
+todo:
+    fix bonus yahtzee bug
+    als je niks kan invullen iets kunnen afstrepen
+        nu kan je de nul overwriten m et nul en jezelf een tweede kan sgeven.
+    out of bounds score card keuze?
+    save game option
+
+EN:
+
+>>>>>>YAHTZEE game rules:<<<<<<<
+
+>>>Gameplay<<<
+During a turn, a player may roll the dice up to three times.
+On the first and second roll, they may set aside some dice and only reroll the others.
+After the third roll, they must place their combination in one of the thirteen categories. This can also be done after the first or second roll.
+Once a player has filled in a category, the next player takes their turn.
+A player must fill in each category once during the game.
+This means a player may score zero points in a particular category.
+After players have filled in combinations in all categories, they tally their points.
+The player with the highest number of points is the winner.
+
+>>>There are two types of categories:<<<
+Upper section: number combinations 1 through 6.
+Lower section: poker-like combinations.
+
+Combination      Points
+Three of a kind  Total number of pips
+Four of a kind   Total number of pips
+Small straight   30
+Large straight   40
+Full House       25
+Chance           Total number of pips
+Yahtzee          50
+
+A player can score a Yahtzee bonus if they have multiple instances of five of a kind in the same game.
+The condition is that the first Yahtzee must be scored with 50 points and not 0. The bonus is 100 points for the second and each subsequent Yahtzee.
+
+/////maybe add
+The combination is also filled in another category during the same turn.
+If the Yahtzee box has already been filled in (with 0 or 50 points), the combination also counts as three of a kind, Four of a kind,
+Chance: totale_score of all five dice, Full House (25 points), Small straight (30 points), or Large straight (40 points).
+The condition is that the box from the list 1 through 6 of the number of pips of the relevant Yahtzee has already been filled in.
+
+/////minigame?
+There are also five-round competitions,
+where the player with the highest total points after five rounds is declared the overall winner.
+The game can also be played solo. The player can then keep a list of high scores.
+
+
+------------------------------------------------------------------------------------------------------------------------
+NL:
+
+>>>>>>YAHTZEE spelregels:<<<<<<<
+
+>>>Spelverloop<<<
+Tijdens een beurt mag een speler de dobbelstenen ten hoogste drie keer werpen.
+Bij de eerste en tweede worp kan hij enkele dobbelstenen opzij leggen en enkel de andere opnieuw werpen.
+Na de derde beurt is hij verplicht om zijn combinatie onder te brengen in een van de dertien categorieën.Dit mag ook na de eerste of tweede worp.
+Nadat de speler een categorie ingevuld heeft, is de volgende speler aan de beurt.
+Een speler moet elke categorie één keer invullen tijdens het spel.
+Dit betekent dat het kan gebeuren dat een speler nul punten scoort in een bepaalde categorie.
+Nadat de spelers in alle categorieën een combinatie ingevuld hebben, tellen zij hun punten op.
+De speler met het hoogste aantal punten is de winnaar.
+
+>>>Er zijn twee soorten categorieën:<<<
+Bovenste vakken: de nummercombinaties 1 t/m 6.
+Onderste vakken: pokerachtige combinaties.
+
+Combinatie	    Aantal punten
+Drie gelijke	Totaal aantal ogen
+Vier gelijke	Totaal aantal ogen
+Kleine straat	30
+Grote straat	40
+Full House	    25
+Kans	        Totaal aantal ogen
+Yahtzee	        50
+
+De speler kan een Yahtzee-bonus scoren als zij meerdere keren vijf gelijke dobbelstenen heeft in hetzelfde spel.
+Voorwaarde is dat de eerste Yahtzee genoteerd is met 50 punten en niet 0 is. De bonus bedraagt 100 punten voor de tweede en elke volgende yahtzee.
+
+/////maybe add
+De combinatie wordt tijdens dezelfde beurt ook in een andere categorie ingevuld.
+Als het Yahtzee-vakje al is ingevuld (met 0 of 50 punten) dan geldt de combinatie ook als drie dezelfde, Carré,
+Chance: tel het totaal van alle vijf dobbelstenen, Full House (25 punten), Kleine straat (30 punten) of Grote straat (40 punten).
+Voorwaarde is dat het vakje uit de lijst 1 t/m 6 van het aantal ogen van de desbetreffende Yahtzee reeds is ingevuld.
+
+/////minigame?
+Er worden ook wedstrijden van vijf ronden gespeeld,
+waarbij de speler met het hoogste puntentotaal na vijf ronden wordt uitgeroepen tot algehele winnaar.
+Het spel kan ook alleen gespeeld worden. De speler kan dan een lijst met hoogste scores bijhouden.
+

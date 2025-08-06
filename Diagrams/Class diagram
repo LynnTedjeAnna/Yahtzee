@@ -1,0 +1,42 @@
+@startuml
+
+class Dice {
+    - dice_value: int
+    ____
+    + roll(): void
+    + get_value(): int
+}
+
+class Player {
+    - name: std::string
+    ____
+    + get_name(): std::string
+    + set_name(name: std::string): void
+}
+
+class Game {
+    ____
+    + start(): void
+    + next_roll(): void
+    + end_game(): void
+}
+
+class Scoreboard {
+    ____
+    + set_score(player: Player, category: Category, score: int): void
+    + calc_total_score(player: Player): int
+}
+
+class Category {
+    ____
+    - name: std::string
+    ____
+    + get_name(): std::string
+    + calculate_score(dice_values: int[]): int
+}
+
+Game *-- Player
+Game *-- Scoreboard
+Game *-- Category
+
+@enduml

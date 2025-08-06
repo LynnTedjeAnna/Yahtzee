@@ -1,0 +1,33 @@
+@startuml
+
+left to right direction
+
+actor Player
+
+rectangle "Game" {
+    usecase "Start Game" as start
+    usecase "Next Turn" as next_roll
+    usecase "End Game" as end_game
+}
+
+rectangle "Scoreboard" {
+    usecase "Set Score" as set_score
+    usecase "Calc Total Score" as calc_total_score
+}
+
+rectangle "Category" {
+    usecase "Get Name" as get_name
+    usecase "Calculate Score" as calculate_score
+}
+
+Player --> start
+Player --> next_roll
+Player --> end_game
+
+start --> set_score
+next_roll --> set_score
+end_game --> calc_total_score
+
+set_score --> calculate_score
+
+@enduml
