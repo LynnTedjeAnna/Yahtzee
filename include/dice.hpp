@@ -6,6 +6,8 @@
 
 #include <cstdint>
 
+#define MAX_DICE 5
+
 class Dice {
 public:
     // Constructor

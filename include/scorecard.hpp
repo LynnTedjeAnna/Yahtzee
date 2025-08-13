@@ -17,7 +17,6 @@ enum scores{
     BONUS_YAHTZEE = 14
 };
 
-
  #define BONUS_SCORE 63
  #define BONUS_POINTS 35
  #define POINTS_FULL_HOUSE 25
@@ -25,6 +24,7 @@ enum scores{
  #define POINTS_LARGE_STRAIGHT 40
  #define POINTS_YAHTZEE 50
  #define BONUS_POINTS_YAHTZEE 100
+ #define INVALID_POINTS 255
 
 class Scorecard {
 public:
@@ -33,14 +33,17 @@ public:
 
     void print_score();
     void set_score(const Dice dices[5]);
-    bool check_score();
+    bool is_selected_slot_empty();
     bool check_duplicates(const Dice dices[5]);
     bool check_ascending(const Dice dices[5]);
+    uint8_t selected_sum(const Dice dices[5]);
+    uint8_t cumulative_sum(const Dice dices[5]);
+    void invalidate_select();
     uint16_t calc_total_score();
 
 private:
-    uint16_t total_score = 0;
-    uint8_t part1_scorecard[6];
+    uint32_t total_score = 0;
+    uint8_t part1_scorecard[6]{};
     uint8_t three_kind = 0;
     uint8_t four_kind = 0;
     uint8_t full_house = 0;
@@ -49,6 +52,7 @@ private:
     uint8_t yahtzee = 0;
     uint8_t bonus_yahtzee = 0;
     uint8_t chance = 0;
-    uint32_t select;
+    uint32_t select{};
+    uint8_t invalid_count = 0;
 };
 #endif //YAHTZEE_SCORECARD_HPP
